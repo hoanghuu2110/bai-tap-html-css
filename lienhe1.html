@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f2f2f2; 
+        }
+
+        form {
+            width: 550px;
+            height: 550px;
+            background-color: #ffffff; 
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .form-group label {
+            margin-bottom: 5px;
+        }
+
+        .form-group input[type="text"],
+        .form-group input[type="email"],
+        .form-group textarea {
+            margin-bottom: 10px;
+            width: 100%;
+        }
+
+        .form-group textarea {
+            height: 150px;
+            resize: vertical; 
+        }
+
+        button {
+            background-color: rgb(36, 178, 36);
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: rgba(64, 98, 108, 0.8);
+        }
+    </style>
+</head>
+<body>
+    <a href="../index.html"></a>
+    <form>
+        <div class="form-group">
+            <label for="username">Họ và Tên</label> <br>
+            <input type="text" id="username" name="username" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label> <br>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="topic">Chủ đề quan tâm</label> <br>
+            <input type="text" id="topic" name="topic" required>
+        </div>
+        <div class="form-group">
+            <label for="content">Nội dung</label> <br>
+            <textarea id="content" name="content" required></textarea>
+        </div>
+        <button type="submit">Gửi</button>
+    </form>
+</body>
+</html>
